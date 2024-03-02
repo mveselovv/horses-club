@@ -1,0 +1,575 @@
+@font-face {
+	font-family: 'Golos-Text';
+	src: url('../fonts/Golos-Text_Bold.woff2') format('woff2'),
+		url('../fonts/Golos-Text_Bold.woff') format('woff'),
+		url('../fonts/Golos-Text_Bold.ttf') format('truetype'),
+		url('../fonts/Golos-Text_Bold.otf') format('opentype');
+	font-weight: 600;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Golos-Text';
+	src: url('../fonts/Golos-Text_Regular.woff2') format('woff2'),
+		url('../fonts/Golos-Text_Regular.woff') format('woff'),
+		url('../fonts/Golos-Text_Regular.ttf') format('truetype'),
+		url('../fonts/Golos-Text_Regular.otf') format('opentype');
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Golos-Text';
+	src: url('../fonts/Golos-Text_Medium.woff2') format('woff2'),
+		url('../fonts/Golos-Text_Medium.woff') format('woff'),
+		url('../fonts/Golos-Text_Medium.woff2') format('truetype'),
+		url('../fonts/Golos-Text_Medium.otf') format('opentype');
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Merriweather';
+	src: url('../fonts/Merriweather-Regular.woff2') format('woff2'),
+		url('../fonts/Merriweather-Regular.woff') format('woff'),
+		url('../fonts/Merriweather-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Merriweather';
+	src: url('../fonts/Merriweather-Bold.woff2') format('woff2'),
+		url('../fonts/Merriweather-Bold.woff') format('woff'),
+		url('../fonts/Merriweather-Regular.ttf') format('truetype');
+	font-weight: 600;
+	font-display: swap;
+}
+
+body {
+	font-family: 'Golos-text', sans-serif;
+	font-size: 20px;
+	color: #313131;
+	scroll-behavior: smooth;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	max-width: 1222px;
+	margin: 0 auto;
+}
+
+.main__link {
+	color: var(--colorLink);
+	font-size: 20px;
+	text-decoration: none;
+	transition: color .2s ease-in-out;
+}
+
+.main__link:hover {
+	color: var(--colorLinkHover);
+}
+
+.section-title {
+	font-size: 54px;
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.project__paginate-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: var(--colorBlack);
+	border: 0;
+	padding: 0;
+	width: 36px;
+	height: 36px;
+	transition: background-color .2s ease-in-out;
+	cursor: pointer;
+}
+
+.project__paginate-btn svg {
+	width: 20px;
+	height: 20px;
+}
+
+.project__paginate-btn:hover {
+	background-color: var(--colorHover);
+}
+
+.project-arrow__disabled {
+	background-color: #D6D6D6;
+	cursor: default;
+}
+
+.project-arrow__disabled:hover {
+	background-color: #D6D6D6;
+}
+
+.project__paginate-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 6px;
+	max-width: max-content;
+}
+
+.project__paginate-bull {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #D9D9D9;
+}
+
+.project__paginate-bull-active {
+	background-color: var(--colorBlack);
+}
+
+/* SECTION PRESENTATION */
+.presentation {
+	background-image: url('../images/1920_header_b.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.presentation__container {
+	padding-top: 26px;
+	padding-bottom: 129px;
+}
+
+.presentation__content {
+	max-width: 542px;
+}
+
+.presentation__logo-link {
+	display: inline-block;
+	margin-bottom: 59px;
+}
+
+.presentation__title {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	font-family: 'Merriweather', sans-serif;
+	font-size: 60px;
+	line-height: 66px;
+	font-weight: 400;
+	margin: 0 0 24px 0;
+	text-transform: uppercase;
+}
+
+.presentation__title-word {
+	display: inline-block;
+	width: 100%;
+}
+
+.presentation__title-word--full-width {
+	text-align: center;
+}
+
+.presentation__title-word--center {
+	text-align: center;
+}
+
+.presentation__title-word--right {
+	text-align: right;
+}
+
+.presentation__description {
+	font-size: 18px;
+	line-height: 23px;
+	text-align: center;
+	margin: 0 0 39px 0;
+}
+
+.presentation__actions {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+}
+
+.presentation__actions-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 17px 49px;
+	background-color: var(--colorBlack);
+	border: 1px solid var(--colorBlack);
+	font-size: 16px;
+	color: var(--colorWhite);
+	text-decoration: none;
+	text-align: center;
+	font-weight: 500;
+	border-radius: 66px;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+
+.presentation__actions-btn:hover {
+	background-color: var(--colorHover);
+	color: var(--colorBlack);
+	border-color: var(--colorHover);
+}
+
+.presentation__actions-btn.btn__hole {
+	background-color: transparent;
+	color: var(--colorBlack);
+}
+
+.presentation__actions-btn.btn__hole:hover {
+	background-color: var(--colorBlack);
+	color: var(--colorWhite);
+	border-color: var(--colorBlack);
+}
+
+/* SECTION MARQUEE */
+.marquee {
+	background-color: var(--colorRed);
+	padding: 17px 0;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.marquee__list {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+	0% {
+		transform: translateX(100%);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.marquee__list-item {
+	position: relative;
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-family: 'Merriweather', sans-serif;
+	font-size: 22px;
+	color: var(--colorWhite);
+}
+
+.marquee__list-item:not(:last-child):after {
+	content: '\2022';
+	margin: 0 12px;
+	color: var(--colorWhite);
+}
+
+/* SECTION TOURNAMENT */
+
+.tournament__invite {
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+	padding-top: 80px;
+	margin-bottom: 35px;
+}
+
+.tournament__text-block {
+	margin: 0;
+}
+
+.tournament__text {
+	font-size: 36px;
+	line-height: 49px;
+	text-transform: uppercase;
+	font-family: 'Merriweather', sans-serif;
+}
+
+.tournament__image {
+	max-width: 100%;
+}
+
+.tournament__text strong {
+	color: var(--colorRed);
+}
+
+.tournament__info {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 191px;
+}
+
+.tournament__info-image {
+	margin-right: 16px;
+	margin-left: -28px;
+}
+
+.tournament__info-content-title {
+	padding-top: 30px;
+	margin: 0 0 60px 0;
+}
+
+.tournament__table {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+.tournament__table-item {
+	display: flex;
+	height: 56px;
+	width: 100%;
+}
+
+.tournament__table-item:not(:last-child) {
+	border-bottom: 1px solid #D0D0D0;
+}
+
+.tournament__table-item.item__discount .tournament__table-right {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.tournament__table-item:first-child {
+	align-items: flex-start;
+	height: 40px;
+}
+
+.tournament__table-item:first-child .tournament__table-left {
+	justify-content: flex-start;
+}
+
+.tournament__table-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	height: 100%;
+	min-width: 305px;
+	border-right: 1px solid #D0D0D0;
+}
+
+.tournament__table-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 16px;
+	width: 100%;
+	font-weight: bold;
+}
+
+.tournament__table-right del {
+	text-decoration: line-through;
+	text-decoration-color: red;
+}
+
+.stages {
+	padding-bottom: 205px;
+}
+
+.stages__title-bottom {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.stages__title {
+	text-transform: unset;
+	margin-bottom: 58px;
+}
+
+.stages__title-text {
+	text-transform: uppercase;
+}
+
+.stages__title-link {
+	font-family: 'Golos-Text', sans-serif;
+}
+
+.stages__list {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 20px;
+	max-height: 396px;
+}
+
+.stages__list::after {
+	position: absolute;
+	content: '';
+	width: 402px;
+	height: 235px;
+	bottom: -6px;
+	right: -64px;
+	background-image: url('../images/air.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.stages__item {
+	display: flex;
+	gap: 20px;
+}
+
+.stages__item-inner {
+	background-image: url('../images/bg_cart.jpg');
+	width: 100%;
+	display: flex;
+	font-weight: 500;
+	gap: 16px;
+	align-items: flex-start;
+	font-size: 20px;
+	padding: 20px;
+}
+
+.stages__item-text {
+	margin: 0;
+}
+
+.stages__item-text.text__limit {
+	max-width: 446px;
+}
+
+.stages__item-step {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background-color: var(--colorWhite);
+	border-radius: 50%;
+	min-width: 36px;
+	height: 36px;
+	pointer-events: none;
+	user-select: none;
+}
+
+.stages__child-first {
+	grid-area: 1 / 1 / 2 / 3;
+}
+
+.stages__child-second {
+	grid-area: 1 / 3 / 3 / 4;
+	height: 100%;
+}
+
+.stages__child-third {
+	grid-area: 2 / 1 / 3 / 3;
+}
+
+.stages__child-four {
+	grid-area: 3 / 1 / 4 / 2;
+}
+
+.stages__child-five {
+	grid-area: 3 / 2 / 4 / 4;
+}
+
+.project__paginate {
+	display: none;
+}
+
+/* SECTION PARTICIPANTS */
+.participants__container {
+	overflow: hidden;
+	padding-bottom: 140px;
+}
+.participants__header {
+	margin-bottom: 60px;
+}
+
+.participants__title {
+	text-transform: uppercase;
+}
+
+.participants__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.participants__paginate {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 12px;
+}
+
+.participants__prev,
+.participants__next {
+	height: 44px;
+	width: 44px;
+}
+
+.participants__fraction {
+	font-size: 16px;
+}
+
+.participants__list-item {
+	display: flex !important;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.participants__list-item-photo {
+	margin-bottom: 31px;
+}
+
+.participants__list-item-name {
+	margin: 0 0 6px 0;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.participants__list-item-achievement {
+	margin: 0 0 20px 0;
+	font-weight: 400;
+	font-size: 20px;
+	color: #838383;
+}
+
+.participants__list-item-details {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	border: 1px solid var(--colorLink);
+	font-size: 16px;
+	height: 36px;
+	color: var(--colorLink);
+	font-weight: 500;
+	padding: 0 12px;
+	border-radius: 62px;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+
+.participants__list-item-details:hover {
+	background-color: var(--colorLink);
+	color: var(--colorWhite);
+}
+
+.footer {
+	background-color: #E9DED4;
+	padding-top: 40px;
+	padding-bottom: 72px;
+}
+
+.footer__container {
+	font-size: 16px;
+	line-height: 120%;
+	color: #7b7672;
+}
