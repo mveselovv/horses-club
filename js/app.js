@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const mediaQuery = window.matchMedia('(max-width: 576px)');
 	const marqueeSections = document.querySelectorAll('.marquee');
 	const textDiscount = document.querySelector('.price__discount');
-	const textDiscountSecond = document.querySelector('.price__discount-second');
+	const textDiscountSecond = document.querySelector('.price-discount__second');
 	const participantsSection = document.querySelector('.participants');
 	const participantsContainer = document.querySelector('.participants__container');
 	const participantsPaginate = document.querySelector('.participants__paginate');

@@ -62,14 +62,14 @@ img {
 	margin: 0 auto;
 }
 
-.main__link {
+.main-link {
 	color: var(--colorLink);
 	font-size: 20px;
 	text-decoration: none;
 	transition: color .2s ease-in-out;
 }
 
-.main__link:hover {
+.main-link:hover {
 	color: var(--colorLinkHover);
 }
 
@@ -220,12 +220,12 @@ img {
 	border-color: var(--colorHover);
 }
 
-.presentation__actions-btn.btn__hole {
+.presentation__actions-btn.btn-hole {
 	background-color: transparent;
 	color: var(--colorBlack);
 }
 
-.presentation__actions-btn.btn__hole:hover {
+.presentation__actions-btn.btn-hole:hover {
 	background-color: var(--colorBlack);
 	color: var(--colorWhite);
 	border-color: var(--colorBlack);
@@ -334,7 +334,7 @@ img {
 	border-bottom: 1px solid #D0D0D0;
 }
 
-.tournament__table-item.item__discount .tournament__table-right {
+.tournament__table-item.item-discount .tournament__table-right {
 	display: flex;
 	align-items: center;
 	gap: 5px;

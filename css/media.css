@@ -3,7 +3,7 @@
 		max-width: 100%;
 	}
 
-	.main__link {
+	.main-link {
 		font-size: 18px;
 	}
 
@@ -60,7 +60,7 @@
 		display: none;
 	}
 
-	.presentation__actions-btn.btn__hole {
+	.presentation__actions-btn.btn-hole {
 		background: rgb(255, 255, 255);
 		opacity: 0.9;
 		border: 1px solid transparent;
@@ -177,7 +177,7 @@
 		margin-bottom: 16px;
 	}
 
-	.tournament__table-item.item__discount .tournament__table-right {
+	.tournament__table-item.item-discount .tournament__table-right {
 		padding-bottom: 0;
 	}
 
@@ -337,7 +337,7 @@
 		padding: 26px 20px 100px 20px;
 	}
 
-	.presentation__actions-btn.btn__hole {
+	.presentation__actions-btn.btn-hole {
 		background: rgb(255, 255, 255);
 		opacity: 0.9;
 		border: 1px solid transparent;
